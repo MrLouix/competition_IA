@@ -1,9 +1,6 @@
-from mcp.server import Server
-from mcp.types import Tool, TextContent
-from pathlib import Path
-
-
-RULES_FILE = Path(__file__).parent / "rules" / "game_rules.md"
+"""DEPRECATED — All tools moved to server.py with FastMCP decorators. This file is kept for backward compat only."""
+# This module is obsolete — all tool definitions were moved to server.py
+# using FastMCP's @tool decorator. Do not import from here.
 
 
 async def get_tool_definitions() -> list[Tool]:
